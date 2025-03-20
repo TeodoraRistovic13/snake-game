@@ -1,0 +1,19 @@
+body {
+    background-color: #263445; /* Oslobađanje od bele pozadine */
+    color: white;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Poboljšana navigacija */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* Stilizacija tabele */
+.table {
+    text-align: center;
+    margin-top: 20px;
+}

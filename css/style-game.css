@@ -1,0 +1,69 @@
+/* Postavljanje tamne pozadine */
+.darkBackground {
+    background-color: #263445;
+}
+
+/* Podešavanje tela stranice */
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #263445; /* Oslobađanje od bele pozadine */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fiksiranje navbar-a na vrh ekrana */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Da ostane iznad ostalog sadržaja */
+}
+
+/* Fiksiranje dashboard-a odmah ispod navbar-a */
+.dashboard {
+    position: fixed;
+    top: 56px; /* Visina navbar-a */
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Tamna pozadina */
+    color: white;
+    padding: 10px 20px;
+    z-index: 999;
+    text-align: center;
+}
+
+/* Glavni kontejner popunjava preostali prostor ispod dashboard-a */
+.mainContainer {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px; /* Dodatni razmak između dashboard-a i tabele */
+    width: 100%;
+}
+
+/* Stilizovanje tabele i centriranje */
+#gameBoard {
+    border: 1.5px solid white;
+    background-color: #1E2836;
+    margin-top: 10px; /* Dodatni razmak između dashboard-a i tabele */
+}
+
+/* Stilizacija ćelija u tabeli */
+td {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid white;
+}
+
+/* Centriranje rezultata */
+.score {
+    justify-content: center;
+}
